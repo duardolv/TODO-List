@@ -38,11 +38,10 @@ body {
     border-radius: 5px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease;
+    outline: none;
+    resize: none;
 }
 
-.forms input{
-    outline: none;
-}
 
 .forms button {
     background-color: #f69d3c;
