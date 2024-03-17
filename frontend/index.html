@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="formContainer">
+            <form id="taskForm" class="forms">
+                <div class="inputGroup">
+                    <input type="text" id="taskName" placeholder="Nome da tarefa" class="inputField">
+                </div>
+                <div class="inputGroup">
+                    <textarea id="taskDescription" placeholder="Descrição da tarefa" class="inputField"></textarea>
+                </div>
+                <div class="inputGroup">
+                    <input type="date" id="taskDate" class="inputField">
+                </div>
+                <div class="inputGroup">
+                    <input type="number" id="taskPriority" min="1" max="5" placeholder="Prioridade (1-5)" class="inputField">
+                </div>
+                <div class="inputGroup">
+                    <input type="text" id="taskCategory" placeholder="Categoria" class="inputField">
+                </div>
+                <div class="inputGroup">
+                    <select id="taskStatus" class="inputField">
+                        <option value="todo">A fazer</option>
+                        <option value="doing">Fazendo</option>
+                        <option value="done">Feito</option>
+                    </select>
+                </div>
+                <div class="inputGroup">
+                    <button type="submit" class="submitButton">Criar Tarefa</button>
+                </div>
+            </form>
+        </section>
+        <section  class="to-do">
+            <!-- As tarefas serão inseridas aqui pelo JavaScript -->
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
